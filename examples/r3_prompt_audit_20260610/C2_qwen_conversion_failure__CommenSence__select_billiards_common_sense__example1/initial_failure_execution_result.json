@@ -1,0 +1,11 @@
+{
+  "sample_id": "CommenSence/select_billiards_common_sense/example1",
+  "category": "CommenSence",
+  "task": "select_billiards_common_sense",
+  "example": "example1",
+  "mode": "qwen_guided_expert",
+  "execution_status": "not_run_conversion_failed",
+  "condition_success": null,
+  "failure_reason": "sequence_missing_or_empty",
+  "completed_at": "2026-05-24 01:21:54"
+}

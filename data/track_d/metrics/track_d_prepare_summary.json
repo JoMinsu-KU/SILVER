@@ -1,0 +1,15 @@
+{
+  "time": "2026-05-27 12:48:39",
+  "track_c_root": "C:\\SILVER\\archive\\silver_track_c_qwen_guided_20260524",
+  "track_d_root": "C:\\SILVER\\archive\\silver_track_d_replanning_attribution_20260527",
+  "all_failure_cases": 1040,
+  "primary_c1_cases": 790,
+  "secondary_diagnostic_cases": 250,
+  "missing_input_cases": 0,
+  "status_counts": {
+    "C1_qwen_guided_condition_failure": 790,
+    "C2_qwen_conversion_failure": 210,
+    "C3_entity_mapping_failure": 39,
+    "C4_unsupported_qwen_skill": 1
+  }
+}

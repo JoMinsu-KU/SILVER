@@ -1,0 +1,10 @@
+{
+  "time": "2026-05-27 13:05:29",
+  "set": "primary",
+  "completed_rows": 3,
+  "success": 1,
+  "status_counts": {
+    "C1_qwen_guided_condition_failure": 2,
+    "C0_qwen_guided_success": 1
+  }
+}

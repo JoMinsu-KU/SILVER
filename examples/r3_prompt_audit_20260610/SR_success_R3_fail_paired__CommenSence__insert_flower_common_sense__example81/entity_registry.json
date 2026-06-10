@@ -1,0 +1,102 @@
+[
+  {
+    "component_id": 0,
+    "name": "table",
+    "class": "Table",
+    "xml_path": "obj/meshes/table/table.xml",
+    "position": [
+      -4.413302412694475e-09,
+      1.165652226389549e-08,
+      -7.583419896418223e-07
+    ],
+    "orientation": [
+      1.0,
+      -4.2147229797561535e-09,
+      3.675577853021851e-10,
+      2.4391244487023533e-09
+    ],
+    "role": "background",
+    "is_manipulable_candidate": false,
+    "is_container_candidate": false
+  },
+  {
+    "component_id": 1,
+    "name": "vase_seen",
+    "class": "Vase",
+    "xml_path": "obj/meshes/containers/vases/vase_0/vase.xml",
+    "position": [
+      0.09856899819413484,
+      0.19855324106216674,
+      0.78
+    ],
+    "orientation": [
+      0.9999016473749803,
+      0.0,
+      0.0,
+      -0.01402482002738738
+    ],
+    "role": "target_container",
+    "is_manipulable_candidate": false,
+    "is_container_candidate": true
+  },
+  {
+    "component_id": 2,
+    "name": "chrysanthemum",
+    "class": "CommonGraspedEntity",
+    "xml_path": "obj/meshes/flowers/bloom_flower/chrysanthemum/chrysanthemum_1/chrysanthemum_1.xml",
+    "position": [
+      0.25308581191256646,
+      -0.13667239487587549,
+      0.8053452465291943
+    ],
+    "orientation": [
+      0.9951729042214641,
+      0.06857040281423953,
+      0.06591287840157913,
+      -0.02417608368052316
+    ],
+    "role": "target_entity",
+    "is_manipulable_candidate": true,
+    "is_container_candidate": false
+  },
+  {
+    "component_id": 3,
+    "name": "daisy_flower",
+    "class": "CommonGraspedEntity",
+    "xml_path": "obj/meshes/flowers/bloom_flower/daisy/daisy_2/daisy_2.xml",
+    "position": [
+      0.006057975108239453,
+      -0.13023740240393772,
+      0.8009488333145822
+    ],
+    "orientation": [
+      0.9992883245547886,
+      3.785492439571905e-17,
+      2.477519445610371e-17,
+      0.03772060986362281
+    ],
+    "role": "candidate_entity",
+    "is_manipulable_candidate": true,
+    "is_container_candidate": false
+  },
+  {
+    "component_id": 4,
+    "name": "tulip",
+    "class": "CommonGraspedEntity",
+    "xml_path": "obj/meshes/flowers/bloom_flower/tulip/tulip_draft_0/tulip_draft_0.xml",
+    "position": [
+      -0.24340408871871574,
+      -0.08882571392465935,
+      0.8083956403631668
+    ],
+    "orientation": [
+      0.9973369256477133,
+      0.03631992347345141,
+      -0.03879599446522096,
+      -0.04994787995406641
+    ],
+    "role": "candidate_entity",
+    "is_manipulable_candidate": true,
+    "is_container_candidate": false
+  }
+]

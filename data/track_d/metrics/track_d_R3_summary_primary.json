@@ -1,0 +1,13 @@
+{
+  "time": "2026-05-27 13:05:42",
+  "set": "primary",
+  "manifest_cases": 790,
+  "paired_completed_cases": 3,
+  "same_plan_success": 0,
+  "replan_R3_success": 1,
+  "attributed_recovery_gain": 0.3333333333333333,
+  "attribution_counts": {
+    "A0_no_recovery": 2,
+    "A3_or_A4_replan_recovered": 1
+  }
+}

@@ -1,0 +1,17 @@
+﻿category,task,C2_count
+M&T,select_poker,72
+Semantic,select_poker_semantic,25
+CommenSence,select_nth_largest_poker,23
+M&T,select_billiards,22
+CommenSence,select_billiards_common_sense,11
+PhysicsLaw,speed_of_sound_qa,11
+PhysicsLaw,density_qa,9
+PhysicsLaw,friction_qa,9
+PhysicsLaw,thermal_expansion_qa,7
+PhysicsLaw,magnetism_qa,6
+Semantic,select_toy_semantic,5
+Semantic,select_drink_semantic,3
+Semantic,select_book_semantic,2
+Semantic,select_fruit_semantic,2
+Spatial,select_poker_spatial,2
+M&T,select_book,1

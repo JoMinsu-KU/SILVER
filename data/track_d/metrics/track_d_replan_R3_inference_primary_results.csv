@@ -1,0 +1,4 @@
+﻿run_position,sample_id,track_c_status,schema_valid,parse_error,replan_conversion_ok,conversion_errors,skill_sequence,status,updated_at
+4,CommenSence/insert_flower_common_sense/example9,C1_qwen_guided_condition_failure,True,,True,,pick>place,completed,2026-05-27 13:02:23
+6,CommenSence/insert_flower_common_sense/example19,C1_qwen_guided_condition_failure,True,,True,,pick>place,completed,2026-05-27 13:02:24
+9,CommenSence/insert_flower_common_sense/example31,C1_qwen_guided_condition_failure,True,,True,,pick>place,completed,2026-05-27 13:02:26

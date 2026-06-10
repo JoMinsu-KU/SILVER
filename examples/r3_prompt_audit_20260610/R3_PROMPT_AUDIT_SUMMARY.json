@@ -1,0 +1,183 @@
+{
+  "root": "C:\\SILVER\\archive\\silver_track_d_replanning_attribution_20260527",
+  "export": "C:\\SILVER\\project\\r3_prompt_audit_export_20260610",
+  "counts": {
+    "exec_rows": 1040,
+    "compare_rows": 1040,
+    "manifest_rows": 1040,
+    "prompt_R3_files": 1040,
+    "r3_status_counts": {
+      "C1_qwen_guided_condition_failure": 302,
+      "C0_qwen_guided_success": 326,
+      "C2_qwen_conversion_failure": 174,
+      "C3_entity_mapping_failure": 238
+    },
+    "manifest_candidates": [
+      "C:\\SILVER\\archive\\silver_track_d_replanning_attribution_20260527\\manifest\\track_d_all_failure_cases.jsonl",
+      "C:\\SILVER\\archive\\silver_track_d_replanning_attribution_20260527\\manifest\\track_d_missing_inputs.jsonl",
+      "C:\\SILVER\\archive\\silver_track_d_replanning_attribution_20260527\\manifest\\track_d_primary_c1_cases.jsonl",
+      "C:\\SILVER\\archive\\silver_track_d_replanning_attribution_20260527\\manifest\\track_d_secondary_diagnostic_cases.jsonl"
+    ]
+  },
+  "selected_cases": [
+    {
+      "label": "C0_qwen_guided_success",
+      "sample_id": "CommenSence/insert_flower_common_sense/example31",
+      "track_c_status": "C1_qwen_guided_condition_failure",
+      "r3_status": "C0_qwen_guided_success",
+      "r3_execution_status": "completed",
+      "r3_success": "True",
+      "same_plan_success": "False",
+      "same_plan_execution_status": "completed",
+      "prompt_scan": {
+        "forbidden_hits": {},
+        "required_hits": {
+          "instruction": true,
+          "initial_failed_plan": true,
+          "failure_observation": true,
+          "executed_trace_summary": true,
+          "json_schema": true
+        },
+        "length_chars": 3344
+      },
+      "copied_files": [
+        "adapter_validation.json",
+        "entity_registry.json",
+        "executor_plan.json",
+        "failure_final_mosaic.png",
+        "initial_failure_execution_result.json",
+        "initial_failure_orchestrator.log",
+        "parsed_output.json",
+        "prompt_R3.txt",
+        "raw_output.json"
+      ]
+    },
+    {
+      "label": "C1_qwen_guided_condition_failure",
+      "sample_id": "CommenSence/insert_flower_common_sense/example9",
+      "track_c_status": "C1_qwen_guided_condition_failure",
+      "r3_status": "C1_qwen_guided_condition_failure",
+      "r3_execution_status": "completed",
+      "r3_success": "False",
+      "same_plan_success": "False",
+      "same_plan_execution_status": "completed",
+      "prompt_scan": {
+        "forbidden_hits": {},
+        "required_hits": {
+          "instruction": true,
+          "initial_failed_plan": true,
+          "failure_observation": true,
+          "executed_trace_summary": true,
+          "json_schema": true
+        },
+        "length_chars": 3325
+      },
+      "copied_files": [
+        "adapter_validation.json",
+        "entity_registry.json",
+        "executor_plan.json",
+        "failure_final_mosaic.png",
+        "initial_failure_execution_result.json",
+        "initial_failure_orchestrator.log",
+        "parsed_output.json",
+        "prompt_R3.txt",
+        "raw_output.json"
+      ]
+    },
+    {
+      "label": "C3_entity_mapping_failure",
+      "sample_id": "CommenSence/select_billiards_common_sense/example3",
+      "track_c_status": "C1_qwen_guided_condition_failure",
+      "r3_status": "C3_entity_mapping_failure",
+      "r3_execution_status": "not_run_conversion_failed",
+      "r3_success": "",
+      "same_plan_success": "False",
+      "same_plan_execution_status": "completed",
+      "prompt_scan": {
+        "forbidden_hits": {},
+        "required_hits": {
+          "instruction": true,
+          "initial_failed_plan": true,
+          "failure_observation": true,
+          "executed_trace_summary": true,
+          "json_schema": true
+        },
+        "length_chars": 3094
+      },
+      "copied_files": [
+        "adapter_validation.json",
+        "entity_registry.json",
+        "executor_plan.json",
+        "failure_final_mosaic.png",
+        "initial_failure_execution_result.json",
+        "initial_failure_orchestrator.log",
+        "parsed_output.json",
+        "prompt_R3.txt",
+        "raw_output.json"
+      ]
+    },
+    {
+      "label": "C2_qwen_conversion_failure",
+      "sample_id": "CommenSence/select_billiards_common_sense/example1",
+      "track_c_status": "C2_qwen_conversion_failure",
+      "r3_status": "C2_qwen_conversion_failure",
+      "r3_execution_status": "not_run_conversion_failed",
+      "r3_success": "",
+      "same_plan_success": "False",
+      "same_plan_execution_status": "not_run_conversion_failed",
+      "prompt_scan": {
+        "forbidden_hits": {},
+        "required_hits": {
+          "instruction": true,
+          "initial_failed_plan": true,
+          "failure_observation": true,
+          "executed_trace_summary": true,
+          "json_schema": true
+        },
+        "length_chars": 1440
+      },
+      "copied_files": [
+        "adapter_validation.json",
+        "entity_registry.json",
+        "executor_plan.json",
+        "initial_failure_execution_result.json",
+        "parsed_output.json",
+        "prompt_R3.txt",
+        "raw_output.json"
+      ]
+    },
+    {
+      "label": "SR_success_R3_fail_paired",
+      "sample_id": "CommenSence/insert_flower_common_sense/example81",
+      "track_c_status": "C1_qwen_guided_condition_failure",
+      "r3_status": "C1_qwen_guided_condition_failure",
+      "r3_execution_status": "completed",
+      "r3_success": "False",
+      "same_plan_success": "True",
+      "same_plan_execution_status": "completed",
+      "prompt_scan": {
+        "forbidden_hits": {},
+        "required_hits": {
+          "instruction": true,
+          "initial_failed_plan": true,
+          "failure_observation": true,
+          "executed_trace_summary": true,
+          "json_schema": true
+        },
+        "length_chars": 3291
+      },
+      "copied_files": [
+        "adapter_validation.json",
+        "entity_registry.json",
+        "executor_plan.json",
+        "failure_final_mosaic.png",
+        "initial_failure_execution_result.json",
+        "initial_failure_orchestrator.log",
+        "parsed_output.json",
+        "prompt_R3.txt",
+        "raw_output.json"
+      ]
+    }
+  ],
+  "global_forbidden_term_scan": {}
+}

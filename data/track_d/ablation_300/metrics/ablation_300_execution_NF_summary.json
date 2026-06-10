@@ -1,0 +1,12 @@
+{
+  "time": "2026-05-29 23:59:42",
+  "variant": "NF",
+  "completed_rows": 300,
+  "success": 51,
+  "status_counts": {
+    "C1_qwen_guided_condition_failure": 101,
+    "C0_qwen_guided_success": 51,
+    "C2_qwen_conversion_failure": 97,
+    "C3_entity_mapping_failure": 51
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "time": "2026-05-18 13:21:34",
+  "phase": "s0_full_4000_preload_target",
+  "completed": false,
+  "recovered_from_case_artifacts": true,
+  "archived_corrupted_aggregate_dir": "silver\\results\\silver-official-guided-evaluation-20260516\\track_b\\generic_compatible_official\\archived_corrupted_aggregates\\20260518_132134",
+  "total_manifest_rows": 4000,
+  "processed_rows": 344,
+  "remaining_rows": 3656,
+  "official_eligible": 126,
+  "status_counts": {
+    "B0_official_eligible": 126,
+    "B1_condition_failure": 102,
+    "B3_native_exception": 98,
+    "B4_timeout": 4,
+    "B5_nondeterministic_mismatch": 14
+  },
+  "first_incomplete": {
+    "sample_index": 345,
+    "sample_id": "CommenSence/select_chemistry_tube_common_sense/example44",
+    "case_dir": "silver\\results\\silver-official-guided-evaluation-20260516\\track_b\\generic_compatible_official\\data\\s0_full_4000_preload_target\\CommenSence\\select_chemistry_tube_common_sense\\example44",
+    "has_repeat_1": false,
+    "has_repeat_2": false
+  }
+}

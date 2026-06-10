@@ -1,0 +1,12 @@
+{
+  "time": "2026-05-17 03:30:20",
+  "phase": "s0_stable_task_full",
+  "rows": 20,
+  "official_eligible": 4,
+  "status_counts": {
+    "B0_official_eligible": 4,
+    "B1_condition_failure": 6,
+    "B3_native_exception": 7,
+    "B5_nondeterministic_mismatch": 3
+  }
+}

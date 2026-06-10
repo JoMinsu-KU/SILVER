@@ -1,0 +1,13 @@
+{
+  "time": "2026-05-17 05:21:59",
+  "phase": "s0_balanced_task1_preload_target",
+  "rows": 40,
+  "official_eligible": 23,
+  "status_counts": {
+    "B0_official_eligible": 23,
+    "B1_condition_failure": 10,
+    "B3_native_exception": 3,
+    "B4_timeout": 1,
+    "B5_nondeterministic_mismatch": 3
+  }
+}

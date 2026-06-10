@@ -1,0 +1,61 @@
+{
+  "time": "2026-05-10 02:55:55",
+  "repo_id": "VLABench/vlm_evaluation_v1.0",
+  "top_categories": [
+    "CommenSence",
+    "Complex",
+    "M&T",
+    "PhysicsLaw",
+    "Semantic",
+    "Spatial"
+  ],
+  "category_task_counts": {
+    "CommenSence": 8,
+    "Complex": 5,
+    "M&T": 9,
+    "PhysicsLaw": 6,
+    "Semantic": 9,
+    "Spatial": 8
+  },
+  "discovered_samples": 4500,
+  "published_rows_expected_from_current_tree": 4500,
+  "published_total_size_note": "Hugging Face UI reports size category and the repository contains 22,503 siblings; current public tree/README expose 45 tasks x 100 episodes = 4,500 samples.",
+  "proof_sample": "M&T/select_fruit/example0",
+  "proof_files": {
+    "input.png": {
+      "ok": true,
+      "error": null,
+      "path": "silver\\results\\track_a_vlabench_planning_20260510\\preflight\\M&T\\select_fruit\\example0\\input.png",
+      "size": 902300,
+      "sha256": "7f806cfc78574e09bbd28efd277ca6d1d20293d1b0ac8981523fcfe4731055b2"
+    },
+    "input_mask.png": {
+      "ok": true,
+      "error": null,
+      "path": "silver\\results\\track_a_vlabench_planning_20260510\\preflight\\M&T\\select_fruit\\example0\\input_mask.png",
+      "size": 796806,
+      "sha256": "c4451fbdedbbf1080c770aba12ac661062e149b5994dade8e7ad1d455ef327e3"
+    },
+    "instruction.txt": {
+      "ok": true,
+      "error": null,
+      "path": "silver\\results\\track_a_vlabench_planning_20260510\\preflight\\M&T\\select_fruit\\example0\\instruction.txt",
+      "size": 33,
+      "sha256": "433a2140a7bc5ea032f5bf605cb81a59fd74de784d3792ade8c2b6f22c9a83d0"
+    },
+    "operation_sequence.json": {
+      "ok": true,
+      "error": null,
+      "path": "silver\\results\\track_a_vlabench_planning_20260510\\preflight\\M&T\\select_fruit\\example0\\operation_sequence.json",
+      "size": 290,
+      "sha256": "6b6db96c0d555358328752fde67ef06b2672709319d606271735bb55e26c9992"
+    },
+    "env_config.json": {
+      "ok": true,
+      "error": null,
+      "path": "silver\\results\\track_a_vlabench_planning_20260510\\preflight\\M&T\\select_fruit\\example0\\env_config.json",
+      "size": 3561,
+      "sha256": "8246c1577eb25dea204a5e8f34edab54d4acf5f8d6941cd8d530b38a46218ec2"
+    }
+  }
+}

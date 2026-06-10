@@ -1,0 +1,36 @@
+{
+  "manifest_rows": 4500,
+  "download_ok_rows": 4500,
+  "skill_counts": {
+    "pick": 4735,
+    "pour": 700,
+    "insert": 400,
+    "place": 2135,
+    "lift": 800,
+    "pull": 900,
+    "push": 500,
+    "press": 600
+  },
+  "sequence_length_distribution": {
+    "2": 3420,
+    "9": 200,
+    "4": 71,
+    "6": 71,
+    "5": 100,
+    "10": 8,
+    "8": 30,
+    "1": 600
+  },
+  "category_counts": {
+    "CommenSence": 800,
+    "Complex": 500,
+    "M&T": 900,
+    "PhysicsLaw": 600,
+    "Semantic": 900,
+    "Spatial": 800
+  },
+  "parameter_key_counts": {
+    "target_entity_name": 5335,
+    "target_container_name": 3735
+  }
+}

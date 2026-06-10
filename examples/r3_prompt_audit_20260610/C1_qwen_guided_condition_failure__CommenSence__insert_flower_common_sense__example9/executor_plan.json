@@ -1,0 +1,97 @@
+{
+  "schema_version": "vlabench_skilllib_executor_plan_v1.0",
+  "sample_id": "CommenSence/insert_flower_common_sense/example9",
+  "source": "track_d_replan_R3",
+  "conversion_ok": true,
+  "conversion_errors": [],
+  "conversion_warnings": [],
+  "supported_skills": [
+    "insert",
+    "lift",
+    "pick",
+    "place",
+    "pour",
+    "press",
+    "pull",
+    "push"
+  ],
+  "actions": [
+    {
+      "index": 0,
+      "skill": "pick",
+      "params": {
+        "target_entity_name": "red_tulip"
+      },
+      "object": {
+        "component_id": 2,
+        "name": "tulip",
+        "class": "CommonGraspedEntity",
+        "xml_path": "obj/meshes/flowers/bloom_flower/tulip/tulip_draft_1/tulip_draft_1.xml",
+        "position": [
+          0.2628584140435706,
+          -0.04428656212175567,
+          0.8013398472669325
+        ],
+        "orientation": [
+          0.9996328520202766,
+          4.006997950083899e-17,
+          1.412155296026906e-17,
+          -0.027095408500479135
+        ],
+        "role": "target_entity",
+        "is_manipulable_candidate": true,
+        "is_container_candidate": false
+      },
+      "target": null,
+      "adapter_strategy": "direct_skilllib"
+    },
+    {
+      "index": 1,
+      "skill": "place",
+      "params": {
+        "target_container_name": "vase_seen"
+      },
+      "object": {
+        "component_id": 2,
+        "name": "tulip",
+        "class": "CommonGraspedEntity",
+        "xml_path": "obj/meshes/flowers/bloom_flower/tulip/tulip_draft_1/tulip_draft_1.xml",
+        "position": [
+          0.2628584140435706,
+          -0.04428656212175567,
+          0.8013398472669325
+        ],
+        "orientation": [
+          0.9996328520202766,
+          4.006997950083899e-17,
+          1.412155296026906e-17,
+          -0.027095408500479135
+        ],
+        "role": "target_entity",
+        "is_manipulable_candidate": true,
+        "is_container_candidate": false
+      },
+      "target": {
+        "component_id": 1,
+        "name": "vase_seen",
+        "class": "Vase",
+        "xml_path": "obj/meshes/containers/vases/vase_1/vase.xml",
+        "position": [
+          0.222155375959838,
+          0.21685131840978464,
+          0.78
+        ],
+        "orientation": [
+          0.997052489253032,
+          0.0,
+          0.0,
+          0.0767224457009329
+        ],
+        "role": "target_container",
+        "is_manipulable_candidate": false,
+        "is_container_candidate": true
+      },
+      "adapter_strategy": "direct_skilllib"
+    }
+  ]
+}

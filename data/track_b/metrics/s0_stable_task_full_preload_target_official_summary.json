@@ -1,0 +1,11 @@
+{
+  "time": "2026-05-17 04:24:31",
+  "phase": "s0_stable_task_full_preload_target",
+  "rows": 20,
+  "official_eligible": 4,
+  "status_counts": {
+    "B0_official_eligible": 4,
+    "B1_condition_failure": 12,
+    "B5_nondeterministic_mismatch": 4
+  }
+}

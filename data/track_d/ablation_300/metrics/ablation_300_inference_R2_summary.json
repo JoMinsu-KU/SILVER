@@ -1,0 +1,10 @@
+{
+  "time": "2026-05-31 17:29:05",
+  "variant": "R2",
+  "completed_rows": 300,
+  "conversion_ok": 161,
+  "status_counts": {
+    "completed": 299,
+    "skipped_existing": 1
+  }
+}

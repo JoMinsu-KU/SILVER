@@ -1,0 +1,32 @@
+{
+  "label": "C0_qwen_guided_success",
+  "sample_id": "CommenSence/insert_flower_common_sense/example31",
+  "track_c_status": "C1_qwen_guided_condition_failure",
+  "r3_status": "C0_qwen_guided_success",
+  "r3_execution_status": "completed",
+  "r3_success": "True",
+  "same_plan_success": "False",
+  "same_plan_execution_status": "completed",
+  "prompt_scan": {
+    "forbidden_hits": {},
+    "required_hits": {
+      "instruction": true,
+      "initial_failed_plan": true,
+      "failure_observation": true,
+      "executed_trace_summary": true,
+      "json_schema": true
+    },
+    "length_chars": 3344
+  },
+  "copied_files": [
+    "adapter_validation.json",
+    "entity_registry.json",
+    "executor_plan.json",
+    "failure_final_mosaic.png",
+    "initial_failure_execution_result.json",
+    "initial_failure_orchestrator.log",
+    "parsed_output.json",
+    "prompt_R3.txt",
+    "raw_output.json"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "time": "2026-05-29 21:37:40",
+  "variant": "NF",
+  "completed_rows": 300,
+  "conversion_ok": 152,
+  "status_counts": {
+    "skipped_existing": 2,
+    "completed": 298
+  }
+}

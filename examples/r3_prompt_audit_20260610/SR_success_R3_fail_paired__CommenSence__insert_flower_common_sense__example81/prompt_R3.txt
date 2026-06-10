@@ -1,0 +1,37 @@
+﻿You are revising a robot manipulation plan after a failed simulator execution.
+Return ONLY valid JSON. Do not include markdown.
+
+Rules:
+- Use only the allowed output schema.
+- Do not invent unsupported skills.
+- Do not copy the failed plan if the failure suggests a wrong object, target, or sequence.
+- Do not reveal chain-of-thought; use only a short rationale_summary.
+
+Instruction:
+Pick out the flower associated with the sun and optimism, and lovingly set it in the vase.'
+
+Initial Qwen executor plan:
+{"schema_version": "vlabench_skilllib_executor_plan_v1.0", "sample_id": "CommenSence/insert_flower_common_sense/example81", "source": "qwen_p2_track_c", "conversion_ok": true, "conversion_errors": [], "conversion_warnings": [], "supported_skills": ["insert", "lift", "pick", "place", "pour", "press", "pull", "push"], "actions": [{"index": 0, "skill": "pick", "params": {"target_entity_name": 2}, "object": {"component_id": 2, "name": "chrysanthemum", "class": "CommonGraspedEntity", "xml_path": "obj/meshes/flowers/bloom_flower/chrysanthemum/chrysanthemum_1/chrysanthemum_1.xml", "position": [0.25308581191256646, -0.13667239487587549, 0.8053452465291943], "orientation": [0.9951729042214641, 0.06857040281423953, 0.06591287840157913, -0.02417608368052316], "role": "target_entity", "is_manipulable_candidate": true, "is_container_candidate": false}, "target": null, "adapter_strategy": "direct_skilllib"}, {"index": 1, "skill": "place", "params": {"target_container_name": 1}, "object": {"component_id": 2, "name": "chrysanthemum", "class": "CommonGraspedEntity", "xml_path": "obj/meshes/flowers/bloom_flower/chrysanthemum/chrysanthemum_1/chrysanthemum_1.xml", "position": [0.25308581191256646, -0.13667239487587549, 0.8053452465291943], "orientation": [0.9951729042214641, 0.06857040281423953, 0.06591287840157913, -0.02417608368052316], "role": "target_entity", "is_manipulable_candidate": true, "is_container_candidate": false}, "target": {"component_id": 1, "name": "vase_seen", "class": "Vase", "xml_path": "obj/meshes/containers/vases/vase_0/vase.xml", "position": [0.09856899819413484, 0.19855324106216674, 0.78], "orientation": [0.9999016473749803, 0.0, 0.0, -0.01402482002738738], "role": "target_container", "is_manipulable_candidate": false, "is_container_candidate": true}, "adapter_strategy": "direct_skilllib"}]}
+
+Failure observation:
+The initial Qwen plan was executed, but the task condition was not satisfied. execution_status=completed; condition_success=False; progress_score=0.5; intention_score=1.0.
+
+Executed trace summary:
+stage 0: skill=pick, stage_success=True, task_success=False, error=None
+stage 1: skill=lift, stage_success=True, task_success=False, error=None
+stage 2: skill=moveto, stage_success=True, task_success=False, error=None
+stage 3: skill=lift, stage_success=False, task_success=False, error=None
+
+Allowed output schema:
+{
+  "skill_sequence": [
+    {
+      "name": "pick | place | lift | pull | press | push | pour | insert",
+      "params": {
+        "target_entity_name": "object name or numeric visible component id for pick/press",
+        "target_container_name": "container/target name or numeric visible component id for place/pull/push/pour/insert"
+      }
+    }
+  ],
+  "rationale_summary": "brief non-chain-of-thought explanation"
+}
