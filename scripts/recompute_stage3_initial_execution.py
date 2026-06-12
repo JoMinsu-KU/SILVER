@@ -1,17 +1,24 @@
-from pathlib import Path
+"""Recompute Track C initial Qwen-guided execution counts."""
+
+from __future__ import annotations
+
+import csv
 import json
-import subprocess
-import sys
+from collections import Counter
+from pathlib import Path
+
 
 ROOT = Path(__file__).resolve().parents[1]
 
+
 def main() -> int:
-    script = ROOT / 'scripts' / 'build_release_package.py'
-    proc = subprocess.run([sys.executable, str(script)], cwd=str(ROOT))
-    if proc.returncode != 0:
-        return proc.returncode
-    print(json.dumps({'ok': True, 'message': 'release tables regenerated from local artifacts'}, indent=2))
+    path = ROOT / "data/records/stage3_qwen_initial_execution_records.csv"
+    with path.open(encoding="utf-8-sig", newline="") as handle:
+        rows = list(csv.DictReader(handle))
+    counts = Counter(row["track_c_status"] for row in rows)
+    print(json.dumps({"rows": len(rows), "status_counts": dict(sorted(counts.items()))}, indent=2))
     return 0
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     raise SystemExit(main())

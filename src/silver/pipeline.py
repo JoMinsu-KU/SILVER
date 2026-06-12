@@ -1,15 +1,4 @@
-"""Minimal SILVER replanning pipeline API.
-
-This module connects the reusable pieces used in the experiments:
-
-1. build the R3 failure-aware prompt,
-2. call an OpenAI-compatible VLM endpoint,
-3. parse the structured response,
-4. convert the parsed sequence into a VLABench executor plan.
-
-It intentionally does not run VLABench/MuJoCo. Native execution remains in the
-Track C/D runners so that simulator artifacts are produced and audited there.
-"""
+"""Minimal SILVER replanning pipeline API."""
 
 from __future__ import annotations
 
@@ -77,4 +66,3 @@ class SILVERReplanner:
 
 
 __all__ = ["SILVERReplanner"]
-

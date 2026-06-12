@@ -1,17 +1,30 @@
-from pathlib import Path
+"""Recompute Track D same-plan retry versus SILVER-R3 paired counts."""
+
+from __future__ import annotations
+
+import csv
 import json
-import subprocess
-import sys
+from collections import Counter
+from pathlib import Path
+
 
 ROOT = Path(__file__).resolve().parents[1]
 
+
 def main() -> int:
-    script = ROOT / 'scripts' / 'build_release_package.py'
-    proc = subprocess.run([sys.executable, str(script)], cwd=str(ROOT))
-    if proc.returncode != 0:
-        return proc.returncode
-    print(json.dumps({'ok': True, 'message': 'release tables regenerated from local artifacts'}, indent=2))
+    path = ROOT / "data/records/stage4_sr_r3_paired_records.csv"
+    with path.open(encoding="utf-8-sig", newline="") as handle:
+        rows = list(csv.DictReader(handle))
+    paired = Counter(row["paired_cell"] for row in rows)
+    summary = {
+        "rows": len(rows),
+        "same_plan_retry_success": sum(row["sr_success"] == "True" for row in rows),
+        "silver_r3_success": sum(row["r3_success"] == "True" for row in rows),
+        "paired_cells": dict(sorted(paired.items())),
+    }
+    print(json.dumps(summary, indent=2))
     return 0
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     raise SystemExit(main())

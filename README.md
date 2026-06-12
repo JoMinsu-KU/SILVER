@@ -12,12 +12,12 @@ This repository provides the public ledgers, aggregate tables, schemas, prompt t
 
 ```text
 configs/      Experiment configuration summaries.
-data/         Sample IDs, per-sample records, breakdowns, checksums, and original track artifacts.
+data/         Sample IDs, per-sample records, breakdowns, and checksums.
 docs/         Data dictionary, leakage audit notes, taxonomy definitions, and reproducibility notes.
 prompts/      Planning/replanning prompt templates and representative real R3 prompt audit examples.
 results/      Paper-facing main and supplementary CSV tables.
 schemas/      Output, failure-packet, adapter-validation, and status-code schemas.
-src/silver/   Reusable SILVER system and evaluation code.
+src/silver/   Reusable SILVER method-level API and executor-adapter code.
 scripts/      Verification and table recomputation scripts.
 tests/        Lightweight consistency tests for released artifacts.
 ```

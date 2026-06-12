@@ -1,6 +1,0 @@
-﻿original_label,taxonomy_id,taxonomy_name,korean_name,count,percent_total,main_use,interpretation
-B0_official_eligible,XB0,Execution-ready,실행 준비 완료,2133,53.3250,Track C/D main denominator,official expert 2회 모두 성공한 sample
-B1_condition_failure,XB1,Completed-but-condition-failed,완료됐지만 성공 조건 실패,1217,30.4250,Diagnostic set,native 실행은 끝났지만 task success condition을 만족하지 못한 sample
-B3_native_exception,XB2,Native-exception failure,native 예외/크래시,214,5.3500,Diagnostic set,VLABench/dm_control/SkillLib/native layer에서 exception 또는 crash가 발생한 sample
-B4_timeout,XB3,Native-timeout failure,native timeout,57,1.4250,Diagnostic set,300초 제한 내 official expert 실행이 완료되지 못한 sample
-B5_nondeterministic_mismatch,XB4,Non-deterministic eligibility,반복 실행 비결정성,379,9.4750,Diagnostic set,동일 sample의 1회차와 2회차 결과가 일치하지 않은 sample

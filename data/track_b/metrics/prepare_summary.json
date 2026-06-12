@@ -1,8 +1,0 @@
-{
-  "time": "2026-05-17 01:05:24",
-  "s0_rows": 4000,
-  "s0_tasks": 40,
-  "sanity_rows": 80,
-  "manifest": "silver\\results\\silver-official-guided-evaluation-20260516\\track_b\\generic_compatible_official\\manifest\\s0_generic_compatible_manifest.jsonl",
-  "sanity_manifest": "silver\\results\\silver-official-guided-evaluation-20260516\\track_b\\generic_compatible_official\\manifest\\s0_task2_sanity_manifest.jsonl"
-}

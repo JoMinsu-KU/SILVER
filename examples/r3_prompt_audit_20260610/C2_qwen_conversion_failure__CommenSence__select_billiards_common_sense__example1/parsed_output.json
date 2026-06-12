@@ -1,8 +1,0 @@
-{
-  "assistant_text": "{\n  \"skill_sequence\": [],\n  \"rationale_summary\": \"No valid action sequence can be generated without a defined object or target for the 5-point ball.\"\n}",
-  "parsed_json": {
-    "skill_sequence": [],
-    "rationale_summary": "No valid action sequence can be generated without a defined object or target for the 5-point ball."
-  },
-  "parse_error": null
-}

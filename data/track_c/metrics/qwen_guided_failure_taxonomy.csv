@@ -1,6 +1,0 @@
-status,count
-C0_qwen_guided_success,1106
-C1_qwen_guided_condition_failure,819
-C2_qwen_conversion_failure,168
-C3_entity_mapping_failure,39
-C4_unsupported_qwen_skill,1
