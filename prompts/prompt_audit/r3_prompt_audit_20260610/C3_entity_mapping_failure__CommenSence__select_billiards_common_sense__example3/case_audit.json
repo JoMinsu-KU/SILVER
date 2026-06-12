@@ -1,0 +1,32 @@
+{
+  "label": "C3_entity_mapping_failure",
+  "sample_id": "CommenSence/select_billiards_common_sense/example3",
+  "track_c_status": "C1_qwen_guided_condition_failure",
+  "r3_status": "C3_entity_mapping_failure",
+  "r3_execution_status": "not_run_conversion_failed",
+  "r3_success": "",
+  "same_plan_success": "False",
+  "same_plan_execution_status": "completed",
+  "prompt_scan": {
+    "forbidden_hits": {},
+    "required_hits": {
+      "instruction": true,
+      "initial_failed_plan": true,
+      "failure_observation": true,
+      "executed_trace_summary": true,
+      "json_schema": true
+    },
+    "length_chars": 3094
+  },
+  "copied_files": [
+    "adapter_validation.json",
+    "entity_registry.json",
+    "executor_plan.json",
+    "failure_final_mosaic.png",
+    "initial_failure_execution_result.json",
+    "initial_failure_orchestrator.log",
+    "parsed_output.json",
+    "prompt_R3.txt",
+    "raw_output.json"
+  ]
+}

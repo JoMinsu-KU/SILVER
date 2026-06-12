@@ -1,0 +1,15 @@
+{
+  "type": "object",
+  "required": [
+    "sample_id",
+    "resolved_steps"
+  ],
+  "properties": {
+    "sample_id": {
+      "type": "string"
+    },
+    "resolved_steps": {
+      "type": "array"
+    }
+  }
+}

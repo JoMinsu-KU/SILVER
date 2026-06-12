@@ -1,7 +1,7 @@
 ﻿variant,status,count
 SR,C0_qwen_guided_success,14
-SR,C1_qwen_guided_condition_failure,206
-SR,C2_qwen_conversion_failure,60
+SR,C1_qwen_guided_condition_failure,218
+SR,C2_qwen_conversion_failure,48
 SR,C3_entity_mapping_failure,19
 SR,C4_unsupported_qwen_skill,1
 NF,C0_qwen_guided_success,51

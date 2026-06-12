@@ -1,6 +1,6 @@
-﻿status,description_ko,count,rate_total
-C0_qwen_guided_success,성공,1093,51.24%
-C1_qwen_guided_condition_failure,실행은 됐지만 목표 조건 실패,790,37.04%
-C2_qwen_conversion_failure,실행 가능한 Qwen plan 변환 실패,210,9.85%
+status,description_ko,count,rate_total
+C0_qwen_guided_success,성공,1106,51.85%
+C1_qwen_guided_condition_failure,실행은 됐지만 목표 조건 실패,819,38.40%
+C2_qwen_conversion_failure,실행 가능한 Qwen plan 변환 실패,168,7.88%
 C3_entity_mapping_failure,Qwen entity가 scene registry와 매핑 실패,39,1.83%
 C4_unsupported_qwen_skill,지원하지 않는 skill 제안,1,0.05%

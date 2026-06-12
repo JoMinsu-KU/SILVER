@@ -1,0 +1,3 @@
+track: B
+candidate_samples: 4000
+eligibility_rule: two independent official expert runs both succeed

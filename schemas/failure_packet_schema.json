@@ -1,0 +1,19 @@
+{
+  "type": "object",
+  "required": [
+    "sample_id",
+    "initial_status",
+    "symptom_log"
+  ],
+  "properties": {
+    "sample_id": {
+      "type": "string"
+    },
+    "initial_status": {
+      "type": "string"
+    },
+    "symptom_log": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,10 @@
+condition,post_status,count
+SR,C0_qwen_guided_success,36
+SR,C1_qwen_guided_condition_failure,783
+SR,C2_qwen_conversion_failure,168
+SR,C3_entity_mapping_failure,39
+SR,C4_unsupported_qwen_skill,1
+R3,C0_qwen_guided_success,326
+R3,C1_qwen_guided_condition_failure,302
+R3,C2_qwen_conversion_failure,161
+R3,C3_entity_mapping_failure,238

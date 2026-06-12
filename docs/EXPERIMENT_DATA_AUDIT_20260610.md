@@ -1,8 +1,9 @@
-﻿# SILVER Experiment Data Audit
+# SILVER Experiment Data Audit
 
-Audit date: 2026-06-10  
-Remote host: `[remote-host-redacted]` / `DESKTOP-4F6BFJ8`  
-Remote archive root: `C:\SILVER\archive`
+Audit date: 2026-06-10
+Alignment update: 2026-06-12, incorporating the 2026-06-11 PhysicsLaw replacement artifacts used by the current manuscript.
+Remote host: `203.253.164.72` / `DESKTOP-4F6BFJ8`
+Remote archive root: `<EXPERIMENT_ARCHIVE>`
 
 ## 1. Remote Artifact Roots
 
@@ -10,9 +11,9 @@ The following remote result roots were found and used for this audit.
 
 | Track | Remote path | Status |
 |---|---|---|
-| Track A/B | `C:\SILVER\archive\silver_track_ab_20260523` | Found |
-| Track C | `C:\SILVER\archive\silver_track_c_qwen_guided_20260524` | Found |
-| Track D | `C:\SILVER\archive\silver_track_d_replanning_attribution_20260527` | Found |
+| Track A/B | `<EXPERIMENT_ARCHIVE>\silver_track_ab_20260523` | Found |
+| Track C | `<EXPERIMENT_ARCHIVE>\silver_track_c_qwen_guided_20260524` and `<EXPERIMENT_ARCHIVE>\silver_track_c_qwen_guided_20260611_physicslaw_replaced` | Found |
+| Track D | `<EXPERIMENT_ARCHIVE>\silver_track_d_replanning_attribution_20260527` | Found |
 
 ## 2. Track A Verification
 
@@ -76,9 +77,11 @@ Conclusion: Track B was fully executed for 4,000 samples. The official-expert-el
 
 ## 4. Track C Verification
 
-Source file:
+Source files:
 
 - `silver_track_c_qwen_guided_20260524\metrics\qwen_guided_execution_results.csv`
+- `silver_track_c_qwen_guided_20260611_physicslaw_replaced\metrics\qwen_guided_execution_summary_physicslaw_replaced.json`
+- `silver_track_c_qwen_guided_20260611_physicslaw_replaced\metrics\track_d_failure_pool_implications_physicslaw_replaced.json`
 
 Verified results:
 
@@ -86,21 +89,21 @@ Verified results:
 |---|---:|---:|---|
 | Track C rows | 2,133 | 2,133 | Yes |
 | Unique sample IDs | 2,133 | 2,133 | Yes |
-| C0 Qwen-guided success | 1,093 | 1,093 | Yes |
-| C1 condition failure | 790 | 790 | Yes |
-| C2 conversion failure | 210 | 210 | Yes |
+| C0 Qwen-guided success | 1,106 | 1,106 | Yes |
+| C1 condition failure | 819 | 819 | Yes |
+| C2 conversion failure | 168 | 168 | Yes |
 | C3 entity mapping failure | 39 | 39 | Yes |
 | C4 unsupported skill | 1 | 1 | Yes |
-| Initial failures for Track D | 1,040 | 1,040 | Yes |
+| Initial failures for Track D | 1,027 | 1,027 | Yes |
 
 Execution-status cross-check:
 
 | Track C status | Execution status | Count |
 |---|---|---:|
-| C0 Qwen-guided success | completed | 1,093 |
-| C1 condition failure | completed | 772 |
+| C0 Qwen-guided success | completed | 1,106 |
+| C1 condition failure | completed | 801 |
 | C1 condition failure | expert_sequence_error | 18 |
-| C2 conversion failure | not_run_conversion_failed | 210 |
+| C2 conversion failure | not_run_conversion_failed | 168 |
 | C3 entity mapping failure | not_run_conversion_failed | 39 |
 | C4 unsupported skill | not_run_conversion_failed | 1 |
 
@@ -110,11 +113,11 @@ Category breakdown:
 |---|---:|---:|---:|---:|---:|
 | CommenSence | 311 | 174 | 34 | 0 | 0 |
 | M&T | 326 | 193 | 95 | 2 | 0 |
-| PhysicsLaw | 0 | 0 | 42 | 0 | 0 |
+| PhysicsLaw | 13 | 29 | 0 | 0 | 0 |
 | Semantic | 342 | 127 | 37 | 0 | 1 |
 | Spatial | 114 | 296 | 2 | 37 | 0 |
 
-Conclusion: Track C was executed on the 2,133 Track B eligible samples. The paper's Track C status table and category table are consistent with the remote ledger. One nuance should be kept in mind: 18 of the C1 condition-failure cases have `execution_status=expert_sequence_error`; they are included in the C1 failure class in the current paper.
+Conclusion: Track C was executed on the 2,133 Track B eligible samples. After the 2026-06-11 PhysicsLaw replacement alignment, the current paper's Track C status table and category table are consistent with the remote replacement summary. One nuance should be kept in mind: 18 of the C1 condition-failure cases have `execution_status=expert_sequence_error`; they are included in the C1 failure class in the current paper.
 
 ## 5. Track D Main Recovery Verification
 
@@ -130,12 +133,12 @@ Verified results:
 
 | Item | Recomputed / read from artifact | Paper value | Match |
 |---|---:|---:|---|
-| Track D initial failure cases | 1,040 | 1,040 | Yes |
-| Paired completed cases | 1,040 | 1,040 | Yes |
+| Track D initial failure cases | 1,027 | 1,027 | Yes |
+| Paired completed cases | 1,027 | 1,027 | Yes |
 | Same-plan retry success | 36 | 36 | Yes |
 | R3 success | 326 | 326 | Yes |
-| Attributed recovery gain | 0.278846 | 27.9%p | Yes |
-| A0 no recovery | 702 | 702 | Yes |
+| Attributed recovery gain | 0.282376 | 28.2%p | Yes |
+| A0 no recovery | 689 | 689 | Yes |
 | A1 same-plan retry recovered | 36 | 36 | Yes |
 | A3/A4 replan recovered | 302 | 302 | Yes |
 
@@ -144,8 +147,8 @@ Post-recovery status:
 | Status | Same-plan retry | R3 |
 |---|---:|---:|
 | C0 recovered success | 36 | 326 |
-| C1 condition failure | 754 | 302 |
-| C2 conversion failure | 210 | 174 |
+| C1 condition failure | 783 | 302 |
+| C2 conversion failure | 168 | 161 |
 | C3 entity mapping failure | 39 | 238 |
 | C4 unsupported skill | 1 | 0 |
 
@@ -156,25 +159,26 @@ Paired outcome:
 | SR success / R3 success | 24 |
 | SR success / R3 fail | 12 |
 | SR fail / R3 success | 302 |
-| SR fail / R3 fail | 702 |
+| SR fail / R3 fail | 689 |
 
 Evidence completeness:
 
 | Artifact requirement | Count |
 |---|---:|
-| Case directory exists | 1,040 |
-| `track_d_case_manifest.json` exists | 1,040 |
-| `same_plan_retry/execution_result.json` exists | 1,040 |
-| `replan_R3/raw_output.json` exists | 1,040 |
-| `replan_R3/parsed_output.json` exists | 1,040 |
-| `replan_R3/adapter_validation.json` exists | 1,040 |
-| `replan_R3/executor_plan.json` exists | 1,040 |
-| `replan_R3/prompt_R3.txt` exists | 1,040 |
+| Case directory exists in legacy Track D archive | 1,040 |
+| Paper-aligned Track D analysis denominator | 1,027 |
+| `track_d_case_manifest.json` exists in legacy Track D archive | 1,040 |
+| `same_plan_retry/execution_result.json` exists in legacy Track D archive | 1,040 |
+| `replan_R3/raw_output.json` exists in legacy Track D archive | 1,040 |
+| `replan_R3/parsed_output.json` exists in legacy Track D archive | 1,040 |
+| `replan_R3/adapter_validation.json` exists in legacy Track D archive | 1,040 |
+| `replan_R3/executor_plan.json` exists in legacy Track D archive | 1,040 |
+| `replan_R3/prompt_R3.txt` exists in legacy Track D archive | 1,040 |
 | R3 completed native execution result exists | 628 |
 
 The 628 R3 native execution results match the R3 conversion-success count. The remaining cases are not executed natively because they are conversion or entity-mapping failures.
 
-Conclusion: Track D was executed over the correct 1,040 initial failure cases, and the paired SR/R3 recovery claims in the paper match the remote artifacts.
+Conclusion: Track D was originally archived over 1,040 initial failure cases. The current manuscript uses the paper-aligned 1,027-case denominator after PhysicsLaw replacement, and the paired SR/R3 recovery claims match the aligned metrics.
 
 ## 6. Track D Ablation Verification
 
@@ -203,8 +207,8 @@ The remote experimental artifacts support the main paper analysis:
 
 1. Track A was executed on 4,500 samples under P1/P2/P3, yielding 13,500 evaluated outputs.
 2. Track B was executed on 4,000 S0 generic-compatible samples and produced the 2,133 official-expert-eligible denominator.
-3. Track C was executed on the 2,133 eligible samples and produced 1,093 initial successes and 1,040 initial failures.
-4. Track D was executed on the 1,040 initial failures with paired same-plan retry and R3 replanning results.
+3. Track C was executed on the 2,133 eligible samples and, after PhysicsLaw replacement alignment, produced 1,106 initial successes and 1,027 initial failures.
+4. Track D is reported on the aligned 1,027 initial failures with paired same-plan retry and R3 replanning results.
 5. The 300-case ablation results match the remote ablation metrics.
 6. The paper's main numeric claims match the remote metrics and ledgers checked in this audit.
 
@@ -213,4 +217,3 @@ Remaining interpretive cautions:
 - Track C includes 18 C1 cases with `execution_status=expert_sequence_error`; these are currently folded into C1 condition failure.
 - R3 increases residual C3 entity-mapping failures from 39 under SR to 238 under R3. The paper correctly frames this as a residual grounding bottleneck rather than as solved grounding.
 - Track B excludes 1,867 of the 4,000 S0 samples from the main execution denominator. The paper should continue to state clearly that execution and recovery claims are restricted to the official-expert-eligible subset.
-

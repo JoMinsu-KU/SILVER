@@ -1,0 +1,4 @@
+track: C
+denominator: 2133
+planner_condition: P2
+status_codes: [C0, C1, C2, C3, C4]

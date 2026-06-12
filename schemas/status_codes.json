@@ -1,0 +1,16 @@
+{
+  "B": [
+    "B0_official_eligible",
+    "B1_condition_failure",
+    "B3_native_exception",
+    "B4_timeout",
+    "B5_nondeterministic_mismatch"
+  ],
+  "C": [
+    "C0_qwen_guided_success",
+    "C1_qwen_guided_condition_failure",
+    "C2_qwen_conversion_failure",
+    "C3_entity_mapping_failure",
+    "C4_unsupported_qwen_skill"
+  ]
+}

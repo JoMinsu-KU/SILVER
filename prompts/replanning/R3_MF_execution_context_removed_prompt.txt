@@ -1,0 +1,1 @@
+Metadata-free R3 control: use case-matched failure evidence while removing adapter-resolved failed-plan metadata.

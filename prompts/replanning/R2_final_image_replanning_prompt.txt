@@ -1,0 +1,1 @@
+Replan using the original instruction and final failure image. Return the structured plan JSON only.

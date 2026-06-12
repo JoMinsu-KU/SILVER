@@ -1,18 +1,14 @@
 {
-  "time": "2026-05-29 21:13:04",
+  "time": "2026-06-11 14:37:02",
   "seed": 20260529,
   "total": 300,
-  "target_counts": {
-    "C1_qwen_guided_condition_failure": 220,
-    "C2_qwen_conversion_failure": 60,
-    "C3_entity_mapping_failure": 19,
-    "C4_unsupported_qwen_skill": 1
-  },
+  "composition": "original non-PhysicsLaw 288 cases plus final PhysicsLaw 12-case patch",
   "actual_counts": {
-    "C1_qwen_guided_condition_failure": 220,
-    "C2_qwen_conversion_failure": 60,
+    "C1_qwen_guided_condition_failure": 232,
+    "C2_qwen_conversion_failure": 48,
     "C3_entity_mapping_failure": 19,
     "C4_unsupported_qwen_skill": 1
   },
-  "source_manifest": "C:\\SILVER\\archive\\silver_track_d_replanning_attribution_20260527\\manifest\\track_d_all_failure_cases.jsonl"
+  "source_ablation_root": "C:\\SILVER\\archive\\silver_track_d_replanning_attribution_20260527\\ablation_300",
+  "physicslaw_patch_root": "C:\\SILVER\\archive\\silver_track_d_physicslaw_ablation12_20260611"
 }

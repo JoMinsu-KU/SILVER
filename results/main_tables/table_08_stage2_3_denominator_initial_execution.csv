@@ -1,0 +1,6 @@
+stage,denominator,included,excluded_or_failed,primary_status
+Track A public planning,4500,4500,0,public_planning_rows
+Track B execution candidate,4500,4000,500,S0_generic_compatible
+Track B official expert eligible,4000,2133,1867,B0_official_eligible
+Track C initial Qwen-guided success,2133,1106,1027,C0_qwen_guided_success
+Track D initial failures,2133,1027,1106,initial_failures_for_recovery

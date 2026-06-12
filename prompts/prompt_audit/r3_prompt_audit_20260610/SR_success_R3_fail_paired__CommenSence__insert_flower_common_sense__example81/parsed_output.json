@@ -1,0 +1,21 @@
+{
+  "assistant_text": "{\n  \"skill_sequence\": [\n    {\n      \"name\": \"pick\",\n      \"params\": {\n        \"target_entity_name\": \"tulip\"\n      }\n    },\n    {\n      \"name\": \"place\",\n      \"params\": {\n        \"target_container_name\": \"vase_seen\"\n      }\n    }\n  ],\n  \"rationale_summary\": \"The tulip is the flower associated with the sun and optimism; it should be picked and placed in the vase.\"\n}",
+  "parsed_json": {
+    "skill_sequence": [
+      {
+        "name": "pick",
+        "params": {
+          "target_entity_name": "tulip"
+        }
+      },
+      {
+        "name": "place",
+        "params": {
+          "target_container_name": "vase_seen"
+        }
+      }
+    ],
+    "rationale_summary": "The tulip is the flower associated with the sun and optimism; it should be picked and placed in the vase."
+  },
+  "parse_error": null
+}

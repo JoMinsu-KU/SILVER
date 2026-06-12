@@ -1,0 +1,6 @@
+release_name: SILVER reproducibility package
+paper_title: Failure-Aware Replanning Evaluation for Vision-Language-Model-Guided Robotic Manipulation in Simulator-in-the-Loop Environments
+vlm_backbone: Qwen/Qwen3-VL-8B-Instruct
+dataset: VLABench/vlm_evaluation_v1.0
+main_denominator_policy: official expert eligible samples only
+track_d_policy: reset-based same-sample paired recovery

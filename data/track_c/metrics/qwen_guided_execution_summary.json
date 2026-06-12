@@ -1,13 +1,23 @@
 {
-  "time": "2026-05-27 12:04:40",
-  "result_root": "C:\\SILVER\\archive\\silver_track_c_qwen_guided_20260524",
+  "time": "2026-06-11 14:02:42",
+  "result_root": "C:\\SILVER\\archive\\silver_track_c_qwen_guided_20260611_physicslaw_replaced",
   "completed_rows": 2133,
-  "success": 1093,
+  "success": 1106,
+  "success_rate": 51.85185185185185,
+  "completed_execution": 1907,
+  "completed_execution_success_rate": 57.996853696906136,
+  "qwen_conversion_ok": 1925,
+  "qwen_conversion_failure": 208,
   "status_counts": {
-    "C0_qwen_guided_success": 1093,
-    "C1_qwen_guided_condition_failure": 790,
-    "C2_qwen_conversion_failure": 210,
+    "C0_qwen_guided_success": 1106,
+    "C1_qwen_guided_condition_failure": 819,
+    "C2_qwen_conversion_failure": 168,
     "C3_entity_mapping_failure": 39,
     "C4_unsupported_qwen_skill": 1
+  },
+  "physicslaw_replacement": {
+    "total_cases": 42,
+    "target_exact_match": 13,
+    "target_mismatch": 29
   }
 }

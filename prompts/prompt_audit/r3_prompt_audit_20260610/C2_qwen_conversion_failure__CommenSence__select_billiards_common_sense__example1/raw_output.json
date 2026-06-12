@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-947f57b4591136e2",
+  "object": "chat.completion",
+  "created": 1779929288,
+  "model": "Qwen/Qwen3-VL-8B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"skill_sequence\": [],\n  \"rationale_summary\": \"No valid action sequence can be generated without a defined object or target for the 5-point ball.\"\n}",
+        "refusal": null,
+        "annotations": null,
+        "audio": null,
+        "function_call": null,
+        "tool_calls": [],
+        "reasoning": null
+      },
+      "logprobs": null,
+      "finish_reason": "stop",
+      "stop_reason": null,
+      "token_ids": null
+    }
+  ],
+  "service_tier": null,
+  "system_fingerprint": null,
+  "usage": {
+    "prompt_tokens": 1246,
+    "total_tokens": 1282,
+    "completion_tokens": 36,
+    "prompt_tokens_details": null
+  },
+  "prompt_logprobs": null,
+  "prompt_token_ids": null,
+  "kv_transfer_params": null
+}

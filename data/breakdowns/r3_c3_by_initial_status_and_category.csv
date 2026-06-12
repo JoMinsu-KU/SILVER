@@ -1,0 +1,8 @@
+initial_status,category,count
+C1_qwen_guided_condition_failure,CommenSence,41
+C1_qwen_guided_condition_failure,M&T,41
+C1_qwen_guided_condition_failure,Semantic,31
+C1_qwen_guided_condition_failure,Spatial,103
+C2_qwen_conversion_failure,Semantic,1
+C3_entity_mapping_failure,M&T,2
+C3_entity_mapping_failure,Spatial,19

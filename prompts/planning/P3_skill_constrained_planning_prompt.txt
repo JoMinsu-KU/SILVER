@@ -1,0 +1,1 @@
+Given the scene image and instruction, choose only from the allowed skill schema and return the same JSON output schema. Return JSON only.

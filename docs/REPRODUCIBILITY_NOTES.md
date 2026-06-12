@@ -14,7 +14,7 @@ It does not contain the full raw simulator image/log archive for every case. Tho
 
 ## Path Handling
 
-Some CSV/JSON files preserve original absolute paths such as `C:\SILVER\archive\...`. These are original experiment trace paths. They should be interpreted as artifact identifiers from the run environment, not as required local paths in this repository.
+Some CSV/JSON files preserve original absolute paths such as `<EXPERIMENT_ARCHIVE>\...`. These are original experiment trace paths. They should be interpreted as artifact identifiers from the run environment, not as required local paths in this repository.
 
 If re-running the scripts, update root paths or environment variables in the scripts to match the new machine.
 
@@ -25,9 +25,10 @@ The included verification script checks the expected high-level denominators:
 - Track A manifest: 4,500 samples
 - Track B official run: 4,000 rows plus header
 - Track C Qwen-guided execution: 2,133 rows plus header
-- Track D SR/R3 comparison: 1,040 rows plus header
+- Track D SR/R3 paper-aligned comparison: 1,027 initial failures after 2026-06-11 PhysicsLaw replacement alignment
+- Legacy Track D SR/R3 archive: 1,040 rows plus header
 - Track D ablation subset: 300 rows
-- R3 prompt audit: 1,040 prompt files confirmed in the original archive
+- R3 prompt audit: 1,040 prompt files confirmed in the original legacy archive
 
 Run:
 

@@ -1,0 +1,17 @@
+{
+  "sample_id": "CommenSence/select_billiards_common_sense/example1",
+  "source": "track_d_replan_R3",
+  "conversion_ok": false,
+  "conversion_errors": [
+    "sequence_missing_or_empty"
+  ],
+  "conversion_warnings": [],
+  "action_count": 0,
+  "skill_sequence": [],
+  "adapter_strategies": [],
+  "schema_valid": false,
+  "schema_errors": [
+    "skill_sequence_missing_or_empty"
+  ],
+  "parse_error": null
+}

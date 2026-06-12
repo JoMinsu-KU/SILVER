@@ -1,0 +1,34 @@
+{
+  "type": "object",
+  "required": [
+    "skill_sequence"
+  ],
+  "properties": {
+    "rationale_summary": {
+      "type": "string"
+    },
+    "skill_sequence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "skill_name"
+        ],
+        "properties": {
+          "skill_name": {
+            "type": "string"
+          },
+          "object": {
+            "type": "string"
+          },
+          "target": {
+            "type": "string"
+          },
+          "parameters": {
+            "type": "object"
+          }
+        }
+      }
+    }
+  }
+}

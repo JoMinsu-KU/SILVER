@@ -1,0 +1,1 @@
+Replan using original instruction, failed Qwen-derived executor plan, adapter-resolved simulator-interface metadata, bounded failure diagnosis, and final failure image.

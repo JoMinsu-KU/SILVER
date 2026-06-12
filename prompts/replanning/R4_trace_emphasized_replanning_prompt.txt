@@ -1,0 +1,1 @@
+Replan using R3 evidence plus executed trace emphasis. Return the structured plan JSON only.

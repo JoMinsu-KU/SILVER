@@ -1,0 +1,34 @@
+﻿You are revising a robot manipulation plan after a failed simulator execution.
+Return ONLY valid JSON. Do not include markdown.
+
+Rules:
+- Use only the allowed output schema.
+- Do not invent unsupported skills.
+- Do not copy the failed plan if the failure suggests a wrong object, target, or sequence.
+- Do not reveal chain-of-thought; use only a short rationale_summary.
+
+Instruction:
+Please put the ball worth 5 score in hole
+
+Initial Qwen executor plan:
+{"schema_version": "vlabench_skilllib_executor_plan_v1.0", "sample_id": "CommenSence/select_billiards_common_sense/example1", "source": "qwen_p2_track_c", "conversion_ok": false, "conversion_errors": ["sequence_missing_or_empty"], "conversion_warnings": [], "supported_skills": ["insert", "lift", "pick", "place", "pour", "press", "pull", "push"], "actions": []}
+
+Failure observation:
+The initial Qwen output could not be converted into an executable plan: sequence_missing_or_empty
+
+Executed trace summary:
+No stage trace was available.
+
+Allowed output schema:
+{
+  "skill_sequence": [
+    {
+      "name": "pick | place | lift | pull | press | push | pour | insert",
+      "params": {
+        "target_entity_name": "object name or numeric visible component id for pick/press",
+        "target_container_name": "container/target name or numeric visible component id for place/pull/push/pour/insert"
+      }
+    }
+  ],
+  "rationale_summary": "brief non-chain-of-thought explanation"
+}

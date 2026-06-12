@@ -1,0 +1,1 @@
+Given the scene image and instruction, return a JSON object with a skill_sequence for the manipulation task. Return JSON only.

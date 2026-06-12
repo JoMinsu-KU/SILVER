@@ -1,23 +1,22 @@
 {
-  "time": "2026-05-24 00:41:43",
+  "time": "2026-06-11 14:02:42",
+  "alignment_note": "Updated from the 2026-06-11 PhysicsLaw replacement summary. The original per-sample legacy CSV is retained separately.",
   "track_b_eligible_rows": 2133,
   "track_c_manifest_rows": 2133,
   "missing_input_rows": 0,
-  "qwen_conversion_ok": 1883,
-  "qwen_conversion_failed": 250,
+  "qwen_conversion_ok": 1925,
+  "qwen_conversion_failed": 208,
   "conversion_error_counts": {
-    "none": 1883,
-    "sequence_missing_or_empty": 210,
-    "step1:unmapped_component:hole": 1,
-    "step1:unmapped_component:hole_0": 1,
-    "unsupported_skill:nudge": 1,
-    "step1:unmapped_component:container_right_1": 11,
-    "step1:unmapped_component:container_right_2": 24,
-    "step1:unmapped_component:right_2": 1,
-    "step1:ambiguous_component:giftbox=>['target_giftbox_seen', 'another_giftbox_seen']": 1
+    "none": 1925,
+    "sequence_missing_or_empty": 168,
+    "entity_mapping_failure": 39,
+    "unsupported_skill": 1
   },
-  "skill_sequence_counts": {
-    "pick>place": 1922,
-    "": 211
+  "status_counts": {
+    "C0_qwen_guided_success": 1106,
+    "C1_qwen_guided_condition_failure": 819,
+    "C2_qwen_conversion_failure": 168,
+    "C3_entity_mapping_failure": 39,
+    "C4_unsupported_qwen_skill": 1
   }
 }

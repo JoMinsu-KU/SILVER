@@ -1,5 +1,5 @@
 {
-  "time": "2026-06-01 23:46:09",
+  "time": "2026-06-11 14:37:02",
   "total_subset_cases": 300,
   "condition_summary": [
     {
@@ -47,9 +47,9 @@
   ],
   "status_counts": {
     "SR": {
-      "C1_qwen_guided_condition_failure": 206,
+      "C1_qwen_guided_condition_failure": 218,
       "C0_qwen_guided_success": 14,
-      "C2_qwen_conversion_failure": 60,
+      "C2_qwen_conversion_failure": 48,
       "C3_entity_mapping_failure": 19,
       "C4_unsupported_qwen_skill": 1
     },

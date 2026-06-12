@@ -1,0 +1,4 @@
+track: A
+samples: 4500
+conditions: [P1, P2, P3]
+downstream_condition: P2

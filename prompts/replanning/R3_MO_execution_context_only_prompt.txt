@@ -1,0 +1,1 @@
+Metadata-only R3 control: use adapter-resolved failed-plan metadata while removing case-matched failure evidence.

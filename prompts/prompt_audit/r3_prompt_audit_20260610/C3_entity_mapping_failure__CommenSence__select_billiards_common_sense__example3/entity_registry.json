@@ -1,0 +1,122 @@
+[
+  {
+    "component_id": 0,
+    "name": "billiards_table",
+    "class": "BilliardTable",
+    "xml_path": "obj/meshes/containers/billiards_table/billiards_table.xml",
+    "position": [
+      0.01694998004817608,
+      -0.014396272534462356,
+      -1.5243571533184588e-06
+    ],
+    "orientation": [
+      0.9976887254317794,
+      -5.326548640067173e-10,
+      -9.973149479672725e-09,
+      0.06795003418918834
+    ],
+    "role": "target_container",
+    "is_manipulable_candidate": false,
+    "is_container_candidate": true
+  },
+  {
+    "component_id": 1,
+    "name": "striped_14",
+    "class": "BilliardBall",
+    "xml_path": "obj/meshes/billiard_balls/billiards.xml",
+    "position": [
+      -0.2836145703949919,
+      -0.07605913894056722,
+      0.5880872263907786
+    ],
+    "orientation": [
+      0.9992340206386597,
+      -0.00099905105595416,
+      -0.02712496025918807,
+      -0.028188835134198103
+    ],
+    "role": "target_entity",
+    "is_manipulable_candidate": true,
+    "is_container_candidate": false
+  },
+  {
+    "component_id": 2,
+    "name": "solid_2",
+    "class": "BilliardBall",
+    "xml_path": "obj/meshes/billiard_balls/billiards.xml",
+    "position": [
+      0.25966380150417345,
+      -0.06856283683549111,
+      0.5880886972046016
+    ],
+    "orientation": [
+      0.9989603763146938,
+      0.0009472534811074813,
+      -0.02769266109359272,
+      0.0361992511746223
+    ],
+    "role": "candidate_entity",
+    "is_manipulable_candidate": true,
+    "is_container_candidate": false
+  },
+  {
+    "component_id": 3,
+    "name": "snooker_green",
+    "class": "BilliardBall",
+    "xml_path": "obj/meshes/billiard_balls/billiards.xml",
+    "position": [
+      -0.2548270906514122,
+      0.28346245505348994,
+      0.5880912585945606
+    ],
+    "orientation": [
+      0.9987581185353955,
+      -0.001301455881684407,
+      -0.028189016933094495,
+      -0.04105978807262535
+    ],
+    "role": "candidate_entity",
+    "is_manipulable_candidate": true,
+    "is_container_candidate": false
+  },
+  {
+    "component_id": 4,
+    "name": "solid_3",
+    "class": "BilliardBall",
+    "xml_path": "obj/meshes/billiard_balls/billiards.xml",
+    "position": [
+      0.27968992246841035,
+      0.2971860057620968,
+      0.5880868731991981
+    ],
+    "orientation": [
+      0.9996266723756195,
+      -9.09707411085611e-06,
+      -0.027164282136424963,
+      -0.002935569536433791
+    ],
+    "role": "candidate_entity",
+    "is_manipulable_candidate": true,
+    "is_container_candidate": false
+  },
+  {
+    "component_id": 5,
+    "name": "solid_4",
+    "class": "BilliardBall",
+    "xml_path": "obj/meshes/billiard_balls/billiards.xml",
+    "position": [
+      -0.013425834162703461,
+      -0.05276870650071431,
+      0.5880913566919748
+    ],
+    "orientation": [
+      0.9975479000430268,
+      -0.001633058193454053,
+      -0.02819079014007541,
+      -0.06403748583417386
+    ],
+    "role": "candidate_entity",
+    "is_manipulable_candidate": true,
+    "is_container_candidate": false
+  }
+]

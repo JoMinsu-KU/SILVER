@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-9e0f3ff6f99e5ef5",
+  "object": "chat.completion",
+  "created": 1779854545,
+  "model": "Qwen/Qwen3-VL-8B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"skill_sequence\": [\n    {\n      \"name\": \"pick\",\n      \"params\": {\n        \"target_entity_name\": \"tulip\"\n      }\n    },\n    {\n      \"name\": \"place\",\n      \"params\": {\n        \"target_container_name\": \"vase_seen\"\n      }\n    }\n  ],\n  \"rationale_summary\": \"The flower identified as a declaration of love is the red tulip, not the chrysanthemum. The plan must target the correct flower and vase.\"\n}",
+        "refusal": null,
+        "annotations": null,
+        "audio": null,
+        "function_call": null,
+        "tool_calls": [],
+        "reasoning": null
+      },
+      "logprobs": null,
+      "finish_reason": "stop",
+      "stop_reason": null,
+      "token_ids": null
+    }
+  ],
+  "service_tier": null,
+  "system_fingerprint": null,
+  "usage": {
+    "prompt_tokens": 2085,
+    "total_tokens": 2193,
+    "completion_tokens": 108,
+    "prompt_tokens_details": null
+  },
+  "prompt_logprobs": null,
+  "prompt_token_ids": null,
+  "kv_transfer_params": null
+}

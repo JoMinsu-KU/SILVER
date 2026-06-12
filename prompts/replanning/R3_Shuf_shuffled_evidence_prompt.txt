@@ -1,0 +1,1 @@
+Shuffled-evidence control: use an R3-like prompt form with failure evidence not matched to the same case.

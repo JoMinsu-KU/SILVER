@@ -1,0 +1,17 @@
+{
+  "type": "object",
+  "required": [
+    "conversion_ok"
+  ],
+  "properties": {
+    "conversion_ok": {
+      "type": "boolean"
+    },
+    "status_code": {
+      "type": "string"
+    },
+    "errors": {
+      "type": "array"
+    }
+  }
+}

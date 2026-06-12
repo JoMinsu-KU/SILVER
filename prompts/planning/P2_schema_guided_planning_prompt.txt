@@ -1,0 +1,1 @@
+Given the masked scene image and instruction, return JSON matching the SILVER output schema. Include skill_sequence with object and target arguments. Return JSON only.

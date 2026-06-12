@@ -1,0 +1,4 @@
+track: D
+denominator: 1027
+conditions: [SR, R3]
+paired_design: true

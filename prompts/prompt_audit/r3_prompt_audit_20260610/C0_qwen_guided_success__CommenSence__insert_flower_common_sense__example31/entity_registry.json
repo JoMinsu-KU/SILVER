@@ -1,0 +1,102 @@
+[
+  {
+    "component_id": 0,
+    "name": "table",
+    "class": "Table",
+    "xml_path": "obj/meshes/table/table.xml",
+    "position": [
+      -1.5470285325992355e-10,
+      4.679419357392366e-10,
+      -7.539575809848404e-07
+    ],
+    "orientation": [
+      1.0,
+      -4.5844780907494926e-11,
+      -2.586038894625944e-11,
+      -6.434029311069253e-12
+    ],
+    "role": "background",
+    "is_manipulable_candidate": false,
+    "is_container_candidate": false
+  },
+  {
+    "component_id": 1,
+    "name": "vase_seen",
+    "class": "Vase",
+    "xml_path": "obj/meshes/containers/vases/vase_0/vase.xml",
+    "position": [
+      0.23114725599193026,
+      0.15162042111506674,
+      0.78
+    ],
+    "orientation": [
+      0.999600880990794,
+      0.0,
+      0.0,
+      -0.02825028712116708
+    ],
+    "role": "target_container",
+    "is_manipulable_candidate": false,
+    "is_container_candidate": true
+  },
+  {
+    "component_id": 2,
+    "name": "tulip",
+    "class": "CommonGraspedEntity",
+    "xml_path": "obj/meshes/flowers/bloom_flower/tulip/tulip_draft_1/tulip_draft_1.xml",
+    "position": [
+      0.3218921943257016,
+      -0.153622350019124,
+      0.8013398472669325
+    ],
+    "orientation": [
+      0.9992950502444606,
+      4.7704376369245476e-17,
+      2.3886443677442744e-17,
+      -0.03754201056045069
+    ],
+    "role": "target_entity",
+    "is_manipulable_candidate": true,
+    "is_container_candidate": false
+  },
+  {
+    "component_id": 3,
+    "name": "chrysanthemum",
+    "class": "CommonGraspedEntity",
+    "xml_path": "obj/meshes/flowers/bloom_flower/chrysanthemum/chrysanthemum_3/chrysanthemum_3/chrysanthemum_3.xml",
+    "position": [
+      -0.0025867114072115065,
+      -0.13040773001534117,
+      0.8223938970234829
+    ],
+    "orientation": [
+      0.9958879726123872,
+      0.08394474939705536,
+      0.03322000390051461,
+      0.007540317997617607
+    ],
+    "role": "candidate_entity",
+    "is_manipulable_candidate": true,
+    "is_container_candidate": false
+  },
+  {
+    "component_id": 4,
+    "name": "sunflower",
+    "class": "CommonGraspedEntity",
+    "xml_path": "obj/meshes/flowers/bloom_flower/sunflower/sunflower_1/sunflower_1.xml",
+    "position": [
+      -0.34288151253202054,
+      -0.12111170896976638,
+      0.8017789305469046
+    ],
+    "orientation": [
+      0.9997901735228047,
+      3.439611585443716e-18,
+      -7.047302258674289e-20,
+      -0.02048435811149502
+    ],
+    "role": "candidate_entity",
+    "is_manipulable_candidate": true,
+    "is_container_candidate": false
+  }
+]

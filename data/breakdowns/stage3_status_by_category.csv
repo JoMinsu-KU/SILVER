@@ -1,0 +1,6 @@
+category,total,C0_qwen_guided_success,C1_qwen_guided_condition_failure,C2_qwen_conversion_failure,C3_entity_mapping_failure,C4_unsupported_qwen_skill,success_rate
+CommenSence,519,311,174,34,0,0,0.5992292870905588
+M&T,616,326,193,95,2,0,0.5292207792207793
+PhysicsLaw,42,13,29,0,0,0,0.30952380952380953
+Semantic,507,342,127,37,0,1,0.6745562130177515
+Spatial,449,114,296,2,37,0,0.25389755011135856

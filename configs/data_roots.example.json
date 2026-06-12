@@ -1,0 +1,7 @@
+{
+  "note": "Example path configuration for rerunning Track C/D. Replace these paths with local full artifact roots if you rerun native execution.",
+  "track_a_root": "C:/path/to/full_archive/track_a_vlabench_planning_20260510",
+  "track_b_root": "C:/path/to/full_archive/silver-official-guided-evaluation-20260516/track_b/generic_compatible_official",
+  "track_b_final_data_root": "C:/path/to/full_archive/silver-official-guided-evaluation-20260516/track_b/generic_compatible_official/data/s0_full_4000_preload_target"
+}
+

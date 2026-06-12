@@ -1,0 +1,2 @@
+error_class,count,source,note
+C3_entity_mapping_failure,238,stage4_sr_r3_paired_records.csv:r3_status,Fine-grained adapter subtypes are not inferred when no explicit subtype field is present.

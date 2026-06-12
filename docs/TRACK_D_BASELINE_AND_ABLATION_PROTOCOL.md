@@ -14,17 +14,17 @@
 | Track C | Qwen-guided execution 평가 | 2,133개 완료, C0-C4 taxonomy 정리 |
 | Track D | 실패 후 재계획 회복률 평가 | 본 문서 기준으로 착수 |
 
-Track C 최종 결과는 다음과 같다.
+Track C 최종 결과는 2026-06-11 PhysicsLaw replacement 반영 후 다음과 같다.
 
 | 상태 | 의미 | 개수 | 비율 |
 |---|---|---:|---:|
-| C0 | Qwen-guided execution success | 1,093 | 51.24% |
-| C1 | 실행은 됐지만 condition failure | 790 | 37.04% |
-| C2 | Qwen plan conversion failure | 210 | 9.85% |
+| C0 | Qwen-guided execution success | 1,106 | 51.85% |
+| C1 | 실행은 됐지만 condition failure | 819 | 38.40% |
+| C2 | Qwen plan conversion failure | 168 | 7.88% |
 | C3 | entity mapping failure | 39 | 1.83% |
 | C4 | unsupported skill | 1 | 0.05% |
 
-Track D의 출발점은 Track C의 실패 case다. 실패 후보는 C1-C4 총 1,040개다.
+Track D의 출발점은 Track C의 실패 case다. 실패 후보는 C1-C4 총 1,027개다.
 
 ## 2. 핵심 연구 질문
 
@@ -150,14 +150,14 @@ Track D 전체 후보는 Track C 실패 case C1-C4다.
 
 | 상태 | 개수 | Track D 처리 |
 |---|---:|---|
-| C1 | 790 | main recovery 대상 |
-| C2 | 210 | conversion failure recovery 대상 |
+| C1 | 819 | main recovery 대상 |
+| C2 | 168 | conversion failure recovery 대상 |
 | C3 | 39 | entity grounding recovery 대상 |
 | C4 | 1 | unsupported skill diagnostic |
 
 ### 7.1 Primary Set
 
-Primary set은 C1 전체 790개로 둔다.
+Primary set은 C1 전체 819개로 둔다.
 
 이유:
 

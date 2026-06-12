@@ -1,19 +1,19 @@
 # Track D Ablation 300건 실험 가이드라인
 
 작성일: 2026-05-29  
-문서 목적: Track D의 주 결과인 `SR vs R3` 전체 1,040건 paired comparison을 보완하기 위해, 실패 피드백 구성요소별 ablation 실험을 300건 subset에서 수행하는 기준을 고정한다.
+문서 목적: Track D의 주 결과인 `SR vs R3` 전체 1,027건 paired comparison을 보완하기 위해, 실패 피드백 구성요소별 ablation 실험을 300건 subset에서 수행하는 기준을 고정한다.
 
 ---
 
 ## 1. 현재 완료된 Track D 주 결과
 
-Track D main comparison은 이미 전체 실패 set 1,040건에서 완료되었다.
+Track D main comparison은 PhysicsLaw replacement 반영 후 전체 실패 set 1,027건으로 정렬되었다.
 
 | 조건 | 의미 | 성공 | 분모 | 성공률 |
 |---|---:|---:|---:|---:|
-| SR | Same-plan retry | 36 | 1,040 | 3.46% |
-| R3 | SILVER replan, failure image + symptom log | 326 | 1,040 | 31.35% |
-| Recovery Gain | R3 - SR | +290 | 1,040 | +27.88%p |
+| SR | Same-plan retry | 36 | 1,027 | 3.5% |
+| R3 | SILVER replan, failure image + symptom log | 326 | 1,027 | 31.7% |
+| Recovery Gain | R3 - SR | +290 | 1,027 | +28.2%p |
 
 이 결과는 논문의 main result로 사용한다.  
 Ablation은 main result를 대체하지 않고, `왜 R3 구성이 타당한가`를 설명하기 위한 보조 실험이다.
@@ -36,17 +36,17 @@ Track D ablation은 다음 질문에 답해야 한다.
 
 ## 3. Ablation 대상 데이터셋
 
-Ablation은 Track D 전체 failure set 1,040건에서 층화 추출한 300건 subset으로 수행한다.
+Ablation은 Track D 전체 failure set 1,027건에서 층화 추출한 300건 subset으로 수행한다.
 
-전체 1,040건의 초기 Track C 실패 분포는 다음과 같다.
+전체 1,027건의 초기 Track C 실패 분포는 다음과 같다.
 
 | 초기 실패 유형 | 의미 | 전체 건수 |
 |---|---|---:|
-| C1 | 실행은 됐지만 task condition 실패 | 790 |
-| C2 | 초기 Qwen output이 executor plan으로 변환 실패 | 210 |
+| C1 | 실행은 됐지만 task condition 실패 | 819 |
+| C2 | 초기 Qwen output이 executor plan으로 변환 실패 | 168 |
 | C3 | object/target entity mapping 실패 | 39 |
 | C4 | unsupported skill 제안 | 1 |
-| 합계 |  | 1,040 |
+| 합계 |  | 1,027 |
 
 300건 subset은 이 분포를 최대한 보존하되, C3/C4가 너무 적어지는 것을 막기 위해 다음 구성을 사용한다.
 
@@ -60,7 +60,7 @@ Ablation은 Track D 전체 failure set 1,040건에서 층화 추출한 300건 su
 
 선정 방식:
 
-- Track D 전체 1,040건 manifest에서 sampling한다.
+- Track D 전체 1,027건 manifest에서 sampling한다.
 - 각 failure type 내부에서는 고정 seed로 무작위 추출한다.
 - seed는 `20260529`로 고정한다.
 - sample id, category, task, example, initial failure type을 별도 manifest로 저장한다.
@@ -69,8 +69,8 @@ Ablation은 Track D 전체 failure set 1,040건에서 층화 추출한 300건 su
 필수 산출물:
 
 ```text
-C:\SILVER\archive\silver_track_d_replanning_attribution_20260527\ablation_300\manifest\track_d_ablation_300_manifest.jsonl
-C:\SILVER\archive\silver_track_d_replanning_attribution_20260527\ablation_300\manifest\track_d_ablation_300_summary_by_status.csv
+<EXPERIMENT_ARCHIVE>\silver_track_d_replanning_attribution_20260527\ablation_300\manifest\track_d_ablation_300_manifest.jsonl
+<EXPERIMENT_ARCHIVE>\silver_track_d_replanning_attribution_20260527\ablation_300\manifest\track_d_ablation_300_summary_by_status.csv
 ```
 
 ---
@@ -229,7 +229,7 @@ R4는 main method가 아니라 upper-bound ablation으로 해석한다. 실행 t
 결과 루트:
 
 ```text
-C:\SILVER\archive\silver_track_d_replanning_attribution_20260527\ablation_300
+<EXPERIMENT_ARCHIVE>\silver_track_d_replanning_attribution_20260527\ablation_300
 ```
 
 권장 구조:
@@ -290,7 +290,7 @@ execution result 또는 not_run_conversion_failed record
 목표:
 
 ```text
-Track D 1,040건 전체에서 C1/C2/C3/C4 비율을 고려한 300건 subset 생성
+Track D 1,027건 전체에서 C1/C2/C3/C4 비율을 고려한 300건 subset 생성
 ```
 
 검증:
@@ -422,13 +422,13 @@ bootstrap 95% CI: 각 조건 성공률과 gain
 
 ### Main Table. Full Track D Recovery
 
-전체 1,040건 사용.
+전체 1,027건 사용.
 
 | 조건 | 분모 | 성공 | 성공률 | 해석 |
 |---|---:|---:|---:|---|
-| R0 Initial Qwen | 1,040 | 0 | 0.00% | Track D failure set 정의상 초기 실패 |
-| SR Same-plan retry | 1,040 | 36 | 3.46% | 단순 재시도 효과 |
-| R3 SILVER | 1,040 | 326 | 31.35% | failure-aware replan |
+| R0 Initial Qwen | 1,027 | 0 | 0.00% | Track D failure set 정의상 초기 실패 |
+| SR Same-plan retry | 1,027 | 36 | 3.5% | 단순 재시도 효과 |
+| R3 SILVER | 1,027 | 326 | 31.7% | failure-aware replan |
 
 주의:
 
@@ -540,7 +540,7 @@ paired comparison CSV 생성
 최종 완료 보고서:
 
 ```text
-C:\SILVER\archive\silver_track_d_replanning_attribution_20260527\ablation_300\report\TRACK_D_ABLATION_300_COMPLETION_REPORT.md
+<EXPERIMENT_ARCHIVE>\silver_track_d_replanning_attribution_20260527\ablation_300\report\TRACK_D_ABLATION_300_COMPLETION_REPORT.md
 ```
 
 보고서 필수 내용:
@@ -570,4 +570,3 @@ failure taxonomy
 3. NF/R1/R2/R4 execution 함수 추가
 4. 기존 SR/R3 결과에서 300건 subset 결과 추출
 5. ablation 통계 및 보고서 생성
-

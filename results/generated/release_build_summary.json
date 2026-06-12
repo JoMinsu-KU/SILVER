@@ -1,0 +1,9 @@
+{
+  "track_a_public_samples": 4500,
+  "track_b_execution_candidates": 4000,
+  "track_b_official_eligible": 2133,
+  "track_c_initial_success": 1106,
+  "track_d_initial_failures": 1027,
+  "track_d_sr_success": 36,
+  "track_d_r3_success": 326
+}

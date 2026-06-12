@@ -1,0 +1,35 @@
+﻿You are revising a robot manipulation plan after a failed simulator execution.
+Return ONLY valid JSON. Do not include markdown.
+
+Rules:
+- Use only the allowed output schema.
+- Do not invent unsupported skills.
+- Do not copy the failed plan if the failure suggests a wrong object, target, or sequence.
+- Do not reveal chain-of-thought; use only a short rationale_summary.
+
+Instruction:
+Please put the ball worth 7 score in hole
+
+Initial Qwen executor plan:
+{"schema_version": "vlabench_skilllib_executor_plan_v1.0", "sample_id": "CommenSence/select_billiards_common_sense/example3", "source": "qwen_p2_track_c", "conversion_ok": true, "conversion_errors": [], "conversion_warnings": [], "supported_skills": ["insert", "lift", "pick", "place", "pour", "press", "pull", "push"], "actions": [{"index": 0, "skill": "pick", "params": {"target_entity_name": "5"}, "object": {"component_id": 5, "name": "solid_4", "class": "BilliardBall", "xml_path": "obj/meshes/billiard_balls/billiards.xml", "position": [-0.013425834162703461, -0.05276870650071431, 0.5880913566919748], "orientation": [0.9975479000430268, -0.001633058193454053, -0.02819079014007541, -0.06403748583417386], "role": "candidate_entity", "is_manipulable_candidate": true, "is_container_candidate": false}, "target": null, "adapter_strategy": "direct_skilllib"}, {"index": 1, "skill": "place", "params": {"target_container_name": "0"}, "object": {"component_id": 5, "name": "solid_4", "class": "BilliardBall", "xml_path": "obj/meshes/billiard_balls/billiards.xml", "position": [-0.013425834162703461, -0.05276870650071431, 0.5880913566919748], "orientation": [0.9975479000430268, -0.001633058193454053, -0.02819079014007541, -0.06403748583417386], "role": "candidate_entity", "is_manipulable_candidate": true, "is_container_candidate": false}, "target": {"component_id": 0, "name": "billiards_table", "class": "BilliardTable", "xml_path": "obj/meshes/containers/billiards_table/billiards_table.xml", "position": [0.01694998004817608, -0.014396272534462356, -1.5243571533184588e-06], "orientation": [0.9976887254317794, -5.326548640067173e-10, -9.973149479672725e-09, 0.06795003418918834], "role": "target_container", "is_manipulable_candidate": false, "is_container_candidate": true}, "adapter_strategy": "direct_skilllib"}]}
+
+Failure observation:
+The initial Qwen plan was executed, but the task condition was not satisfied. execution_status=completed; condition_success=False; progress_score=0.5; intention_score=1.0.
+
+Executed trace summary:
+stage 0: skill=pick, stage_success=True, task_success=False, error=None
+stage 1: skill=place, stage_success=True, task_success=False, error=None
+
+Allowed output schema:
+{
+  "skill_sequence": [
+    {
+      "name": "pick | place | lift | pull | press | push | pour | insert",
+      "params": {
+        "target_entity_name": "object name or numeric visible component id for pick/press",
+        "target_container_name": "container/target name or numeric visible component id for place/pull/push/pour/insert"
+      }
+    }
+  ],
+  "rationale_summary": "brief non-chain-of-thought explanation"
+}

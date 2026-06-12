@@ -1,0 +1,12 @@
+{
+  "allowed_skills": [
+    "pick",
+    "place",
+    "pour",
+    "insert",
+    "lift",
+    "press",
+    "open",
+    "close"
+  ]
+}
